@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'navArea navArea navArea navArea'
+                         'headerArea headerArea headerArea headerArea'
+                         'opcoesArea opcoesArea opcoesArea opcoesArea'
+                         'contatoArea contatoArea contatoArea contatoArea'
+                         'depoimentoArea depoimentoArea depoimentoArea depoimentoArea'
+                         'footerArea footerArea footerArea footerArea';
+    grid-template-rows: 10px 505px 285px 360px 395px 108px;
+}
+
+nav{
+    grid-area: navArea;
+    background-color: #2dcc72;
+}
+
+header{
+    grid-area: headerArea;
+    background-color: brown;
+    display: flex;
+}
+
+header div{
+    width: 50%;
+    display: flex;
+    height: 100%;
+}
+
+header div:first-child{
+}
+
+header div:nth-child(2) img{
+    height: 80%;
+}
+
+
+
+.opcoes{
+    grid-area: opcoesArea;
+    background-color: chocolate;
+}
+
+.contato{
+    grid-area: contatoArea;
+    background-color: crimson;
+}
+
+.depoimentos{
+    grid-area: depoimentoArea;
+    background-color: darkcyan;
+}
+footer{
+    grid-area: footerArea;
+    background-color: darkkhaki;
+}
