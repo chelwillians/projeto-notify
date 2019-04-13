@@ -41,7 +41,6 @@ header div:nth-child(2) img{
 
 .opcoes{
     grid-area: opcoesArea;
-    background-color: chocolate;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,4 +91,21 @@ header div:nth-child(2) img{
 footer{
     grid-area: footerArea;
     background-color: darkkhaki;
+}
+
+@media(max-width:425px){
+    body{
+        grid-template-rows: 10px 508px auto 360px 395px 108px;
+    }
+    .opcoes .item{
+        width: 80%;
+        margin: 25px 0;
+    }
+    .opcoes p{
+        font-size: 12pt;
+    }
+    .opcoes .centro{
+        width: auto;
+        flex-direction: column;
+    }
 }
