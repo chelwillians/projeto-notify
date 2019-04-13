@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-areas: 'navArea navArea navArea navArea'
                          'headerArea headerArea headerArea headerArea'
@@ -7,7 +8,7 @@ body{
                          'contatoArea contatoArea contatoArea contatoArea'
                          'depoimentoArea depoimentoArea depoimentoArea depoimentoArea'
                          'footerArea footerArea footerArea footerArea';
-    grid-template-rows: 10px 505px 285px 360px 395px 108px;
+    grid-template-rows: 10px 508px 285px 360px 395px 108px;
 }
 
 nav{
@@ -19,6 +20,10 @@ header{
     grid-area: headerArea;
     background-color: brown;
     display: flex;
+}
+
+header h1{
+    font-family: 'Pacifico', cursive;
 }
 
 header div{
@@ -34,11 +39,45 @@ header div:nth-child(2) img{
     height: 80%;
 }
 
-
-
 .opcoes{
     grid-area: opcoesArea;
     background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcoes .centro{
+    height: 100%;
+    width: 1040px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opcoes .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.opcoes .item div{
+    display: flex;
+    background-color: #2eca6f; 
+    padding: 20px;
+    border-radius:50%;
+}
+
+.opcoes p{
+    font-size: 11pt;
+    margin: 0;
+    text-align: center;
+}
+
+.opcoes img{ 
+    width: 45px;
+    height: 45px;
 }
 
 .contato{
