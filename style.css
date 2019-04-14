@@ -195,9 +195,27 @@ header div:nth-child(2) img{
 footer{
     grid-area: footerArea;
     background-color: #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+footer div{
+    width: 95%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
 
+footer a{
+    color: #a8a8a8;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+footer a:hover{
+    color: #6b6b6b;
+}
 
 @media(max-width:870px){
     body{
@@ -218,7 +236,7 @@ footer{
 
 @media(max-width:425px){
     body{
-        grid-template-rows: 10px 508px auto auto 395px 108px;
+        grid-template-rows: 10px 508px auto auto 395px auto;
     }
     .opcoes .item{
         width: 95%;
@@ -230,5 +248,14 @@ footer{
     .opcoes .centro{
         width: auto;
         flex-direction: column;
+    }
+    
+    footer{
+        padding: 30px 0;
+    }
+    
+    footer div{
+        flex-direction: column;
+        align-items: center;
     }
 }
