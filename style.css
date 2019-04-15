@@ -1,3 +1,9 @@
+*, *:before, *:after {
+
+    box-sizing: border-box;
+
+}
+
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -8,7 +14,7 @@ body{
                          'contatoArea contatoArea contatoArea contatoArea'
                          'depoimentoArea depoimentoArea depoimentoArea depoimentoArea'
                          'footerArea footerArea footerArea footerArea';
-    grid-template-rows: 10px 508px 285px 360px 395px 108px;
+    grid-template-rows: 10px 350px 285px 360px 395px 108px;
 }
 
 footer{
@@ -38,25 +44,86 @@ footer a:hover{
 
 header{
     grid-area: headerArea;
-    background-color: brown;
+    background: url(img/banner.png) center center no-repeat;
+    background-size: cover;
+    padding: 50px 10vw 0 15vw;
     display: flex;
 }
 
-header h1{
-    font-family: 'Pacifico', cursive;
-}
-
-header div{
-    width: 50%;
+header > div{
     display: flex;
+    flex-grow: 1;
     height: 100%;
 }
 
-header div:first-child{
+header > div:first-child{
 }
 
-header div:nth-child(2) img{
-    height: 80%;
+header > div:nth-child(2) img{
+    height: 100%;
+    margin: 0 auto;
+}
+
+header .header-info {
+
+    width: 290px;
+    margin: 0 auto;
+
+}
+
+header .header-info > h1{
+    
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    color: #FFF;
+
+}
+header .header-info > h1 > span {
+
+    color: #2eca6f;
+
+}
+header .header-info > p {
+
+    color: #FFF;
+
+}
+
+header .header-info > ul.header-icons {
+
+    list-style: none;
+    padding: 0;
+
+}
+
+header .header-info > ul.header-icons > li {
+
+    display: inline-block;
+
+}
+
+header .header-info > ul.header-icons > li > a {
+
+    display: block;
+    margin: 0 5px 0 0;
+    padding: 10px;
+    background-color: #00000050;
+    border-radius: 50%;
+    line-height: 0;
+
+}
+header .header-info > ul.header-icons > li > a.active {
+
+    background-color: #2dcc72;
+
+}
+
+header .header-info > ul.header-icons > li > a > img {
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
 }
 
 nav{
